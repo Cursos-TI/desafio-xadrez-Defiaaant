@@ -1,12 +1,42 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
+//início das mudanças 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+
+    int i = 0;
+    //utilização da estrutura "for" para descrever o movimento do bispo
+    printf("=======================\n");
+    printf("Bispo\n");
+    printf("\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Cima, direita\n");
+    }
+
+    //utilização da estrutura "do while" para descrever o movimento da torre
+    printf("=======================\n");
+    printf("Torre\n");
+    printf("\n");
+    do
+    {
+        printf("Direita\n");
+        i++;
+    } while (i < 5);
+    
+    //utilização da estrutura "while" para descrever o movimento da rainha
+    printf("=======================\n");
+    printf("Rainha\n");
+    printf("\n");
+    i = 0;
+    while (i < 8)
+    {
+        i++;
+        printf("Esquerda\n");
+    }
+    
+    printf("=======================\n");
+    
+    /* As seguintes pontuações são aquelas já inclusas no projeto, preservadas para ajuda futura.
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -27,6 +57,6 @@ int main() {
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
-
+    */
     return 0;
 }

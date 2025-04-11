@@ -3,7 +3,7 @@
 //início das mudanças 
 int main() {
 
-    int i = 0;
+    int i = 0, j = 0;
     //utilização da estrutura "for" para descrever o movimento do bispo
     printf("=======================\n");
     printf("Bispo\n");
@@ -34,8 +34,22 @@ int main() {
         printf("Esquerda\n");
     }
     
+    //Estrutura de loops alinhados para o nível aventureiro
+    //Na peça do cavalo, utilizam-se as estruturas "do while" e "for"
+    //Variável "j" implementada
     printf("=======================\n");
-    
+    printf("Cavalo\n");
+    printf("\n");
+    do
+    {
+    for (int i = 0; i < 2; i++)
+        printf("Baixo\n");
+    {
+        printf("Esquerda\n");
+    }
+    } while (j--);
+
+    printf("=======================\n");
     /* As seguintes pontuações são aquelas já inclusas no projeto, preservadas para ajuda futura.
 
     // Implementação de Movimentação do Bispo
